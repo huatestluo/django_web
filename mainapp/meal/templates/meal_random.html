@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>吃货_随机点餐小助手</title>
+</head>
+<body>
+    <h1>随机选餐</h1>
+    <hr>
+    <p>菜名：{{meal_name}}</p><br>
+    <p>做法：
+    <ul>
+        {% for str in zuofa %}
+            <li>{{str}}</li>
+        {% endfor %}
+
+    </ul>
+    </p>
+    <br>
+    <p>{{url|safe}}</p><br>
+    <hr>
+    <p>{{demo|safe}}</p>
+
+</body>
+</html>
